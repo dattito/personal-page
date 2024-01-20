@@ -1,5 +1,6 @@
 ---
 import "../styles/base.css"
+import SpeedInsights from '@vercel/speed-insights/astro';
 ---
 
 <html lang="de">
@@ -9,6 +10,7 @@ import "../styles/base.css"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
     <title>David Siregar</title>
+    <SpeedInsights />
 	</head>
   <body class="bg-white dark:bg-black">
     <section
@@ -61,10 +63,5 @@ import "../styles/base.css"
       </div>
     </section>
     <script type="module" src="/main.js"></script>
-    <script>
-    import { injectSpeedInsights } from '@vercel/speed-insights';
-    injectSpeedInsights({});
-</script>
-
   </body>
 </html>
